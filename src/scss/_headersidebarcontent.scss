@@ -1,0 +1,103 @@
+.sidebar {
+	width: "100%";
+	height: "100%";
+	z-index: 99999 !important;
+	position: fixed !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden !important;
+}
+.headersidebarcontent {
+	background: black;
+	height: 100%;
+	z-index: 999999999;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__profile {
+		color: white !important;
+		font-family: "Jost-600";
+		font-size: 15px;
+		line-height: 140.8%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 16px 28px !important;
+		img {
+			margin-top: -5px;
+			margin-right: 16px;
+		}
+	}
+	&__content {
+		margin-top: 10px;
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		.nav-link {
+			width: auto !important;
+			display: inline-block;
+			margin-top: 15px;
+			position: relative;
+		}
+		.active {
+			position: relative;
+			z-index: 1;
+			display: inline-block;
+			background: none !important;
+			box-shadow: none;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: 7.94981px;
+				z-index: 0;
+				padding: 2px;
+				background: linear-gradient(
+						50.78deg,
+						rgba(0, 0, 0, 0) 62.21%,
+						#5627db 86.19%
+					),
+					linear-gradient(142.34deg, #1447c9 4.97%, rgba(0, 0, 0, 0) 35.73%);
+
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out;
+				mask-composite: exclude;
+				transform: skewX(-15deg);
+			}
+			&::before {
+				z-index: 0;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				background: radial-gradient(
+					38.53% 77.08% at 44.71% 142.89%,
+					rgba(255, 255, 255, 0.3) 0.52%,
+					rgba(0, 0, 0, 0.3) 100%
+				);
+				box-shadow: inset 0px -0.794981px 1.58996px rgba(255, 255, 255, 0.12),
+					inset -7.94981px 11.1297px 8.74479px rgba(59, 31, 139, 0.2),
+					inset 7.94981px 11.1297px 8.74479px rgba(0, 25, 90, 0.1),
+					inset 0px -4.76988px 19.0795px rgba(255, 255, 255, 0.08);
+				border-radius: 7.94981px;
+				transform: skewX(-15deg) !important;
+			}
+		}
+	}
+	&__item {
+		position: relative;
+		padding: 0.8rem 1.5rem;
+	}
+}

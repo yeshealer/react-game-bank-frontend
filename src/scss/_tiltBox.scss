@@ -1,0 +1,49 @@
+.tiltBox {
+	position: relative;
+	z-index: 999;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 20px;
+		z-index: -1;
+		padding: 2px;
+		background: linear-gradient(
+				117.48deg,
+				rgba(48, 46, 147, 0.6) 3.79%,
+				rgba(0, 0, 0, 0) 9.68%
+			),
+			linear-gradient(
+				53.6deg,
+				rgba(255, 255, 255, 0) 51.31%,
+				rgba(48, 46, 147, 0.6) 63.62%
+			);
+
+		-webkit-mask: linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: destination-out;
+		mask-composite: exclude;
+		transform: skewX(-15deg);
+	}
+	&::before {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: radial-gradient(
+			24.76% 54.07% at 56.33% 62.42%,
+			rgba(20, 18, 74, 0.5) 0.52%,
+			rgba(0, 0, 0, 0.5) 100%
+		);
+		box-shadow: inset -10px 14px 51px #1e2058,
+			inset 0px -6px 24px rgba(149, 147, 255, 0.3);
+		border-radius: 20px;
+		transform: skewX(-15deg);
+	}
+}

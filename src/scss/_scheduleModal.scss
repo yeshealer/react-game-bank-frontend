@@ -1,0 +1,228 @@
+.scheduleModal {
+	&__Btn {
+		font-size: 13.0547px;
+		padding: 13px 0px;
+		min-width: 130px;
+		position: absolute;
+		right: 0px;
+		margin-top: -10px;
+	}
+	&__scheduleBtn {
+		padding: 13px 0px;
+		margin-top: 3rem;
+	}
+	&__content {
+		.modal-content {
+			background-color: transparent !important;
+			border: 0px;
+		}
+	}
+	&__body {
+		margin-top: 80px;
+		position: relative;
+		text-align: center;
+	}
+	&__title {
+		font-size: 25.5917px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		text-align: center;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-shadow: 0px 5.38773px 18.8571px #8f68ff;
+	}
+	&__closeBtn {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+	&__header {
+		height: 60px;
+		background-image: url("../assets/images/ranking-td-bg.svg");
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		border-bottom: 1px solid rgba(#3e54a0, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		svg {
+			transform: skewX(5deg);
+		}
+		p {
+			margin-bottom: 0px;
+			transform: skewX(5deg);
+			margin-left: 10px;
+			margin-right: 10px;
+			font-size: 18px;
+			line-height: 140.8%;
+			font-family: "Jost-600";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 2.85714px 10px #8f68ff;
+		}
+	}
+
+	&__timezone {
+		transform: skewX(5deg);
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 1px solid rgba(#3e54a0, 0.3);
+		border-top: 1px solid rgba(#3e54a0, 0.3);
+		p {
+			font-family: "Jost-600";
+			font-size: 18px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 2.85714px 10px #8f68ff;
+			margin-bottom: 0px;
+		}
+		// .select__menu {
+		// 	z-index: 9999;
+		// }
+		.select__control {
+			width: 150px;
+			margin-left: 20px;
+			z-index: 9999;
+			background: radial-gradient(
+				119.63% 71.09% at 138.81% 141.61%,
+				rgba(38, 35, 131, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: inset -8.33333px 5px 20px rgba(51, 54, 141, 0.6),
+				inset 0px -3.33333px 10px rgba(149, 147, 255, 0.37);
+			border-radius: 10px;
+			border: none;
+			flex-direction: row-reverse;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 2px;
+				border-radius: 10px;
+				background: linear-gradient(
+						18.93deg,
+						rgba(255, 255, 255, 0) 63.64%,
+						rgba(48, 46, 147, 0.6) 77.28%
+					),
+					linear-gradient(
+						154.07deg,
+						rgba(48, 46, 147, 0.6) 19.7%,
+						rgba(0, 0, 0, 0) 27.01%
+					);
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out;
+				mask-composite: exclude;
+			}
+			.select__indicator-separator {
+				display: none;
+			}
+			.select__indicator {
+				border-right: 1px solid rgba(#3e54a0, 0.3);
+			}
+			.select__single-value {
+				color: white;
+				z-index: 1;
+			}
+		}
+	}
+	&__calendarContainer {
+		padding: 2rem;
+		padding-top: 0rem;
+		transform: skewX(5deg);
+
+		.react-calendar {
+			background: transparent;
+			border: 0px;
+			color: white;
+			.react-calendar__tile:enabled:hover,
+			.react-calendar__tile:enabled:focus {
+				border-radius: 100%;
+				background: linear-gradient(28.05deg, #0c2b96 15.49%, #500798 78.67%);
+			}
+			&__tile--now {
+				background: transparent;
+			}
+			&__tile--active {
+				border-radius: 100%;
+				background: linear-gradient(28.05deg, #0c2b96 15.49%, #500798 78.67%);
+				box-shadow: 0px 14px 14px rgba(101, 0, 230, 0.25);
+			}
+			&__month-view__weekdays__weekday {
+				font-family: "Jost-600";
+			}
+			abbr[data-bs-original-title],
+			abbr[title] {
+				text-decoration: transparent;
+			}
+			&__month-view__days__day {
+				color: white;
+				font-family: "Jost-600";
+				font-size: 16px;
+				&--neighboringMonth {
+					color: #757575;
+				}
+			}
+		}
+	}
+	&__calendarBox {
+		display: inline-block;
+		padding-bottom: 3rem;
+		position: relative;
+		transform: skewX(-5deg);
+		&::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: radial-gradient(
+				47.26% 26.46% at 48.28% 74.53%,
+				rgba(52, 49, 152, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: inset -10px 14px 51px #1e2058,
+				inset 0px -6px 24px rgba(149, 147, 255, 0.3);
+			border-radius: 20px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 2px;
+			border-radius: 20px;
+			background: linear-gradient(
+					18.93deg,
+					rgba(255, 255, 255, 0) 63.64%,
+					rgba(48, 46, 147, 0.6) 77.28%
+				),
+				linear-gradient(
+					154.07deg,
+					rgba(48, 46, 147, 0.6) 19.7%,
+					rgba(0, 0, 0, 0) 27.01%
+				);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			z-index: -1;
+		}
+	}
+}

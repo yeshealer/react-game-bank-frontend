@@ -1,0 +1,11 @@
+@import "./scss/styles.scss";
+
+.App {
+	// min-height: 100vh;
+	background-image: url("./assets/images/background.svg");
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-size: 100% 300%;
+	// background-position: 200% 100%;
+}

@@ -1,0 +1,73 @@
+.bank {
+	padding-bottom: 8rem;
+	&__credit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include respond-to(sm) {
+			display: flex;
+			flex-direction: column-reverse;
+			p {
+				margin-top: 1rem;
+			}
+		}
+		p {
+			font-size: 19px;
+			line-height: 140.8%;
+			font-family: "jost-500";
+			margin-bottom: 0px;
+			letter-spacing: 0.01em;
+			text-transform: capitalize;
+			color: #ffffff;
+		}
+		img {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		h4 {
+			font-size: 45.1148px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			margin-bottom: 0px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+
+			color: #ffffff;
+
+			text-shadow: 0px 4.19672px 14.6885px #8f68ff;
+		}
+	}
+	&__content {
+		margin-left: 8rem;
+		margin-right: 8rem;
+		@include respond-to(lg) {
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+		@include respond-to(md) {
+			margin-left: 0rem;
+			margin-right: 0rem;
+		}
+		.row {
+			margin-right: 0px !important;
+		}
+	}
+	&__switch {
+		margin-bottom: -1rem;
+		@include respond-to(md) {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		@include respond-to(sm) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		&__label {
+			font-size: 15px !important;
+			font-family: "Jost-700" !important;
+			letter-spacing: 0.01em !important;
+			text-transform: capitalize !important;
+			color: #ffffff !important;
+		}
+	}
+}

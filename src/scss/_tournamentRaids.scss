@@ -1,0 +1,247 @@
+.tournamentRaids {
+	margin-top: 1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	&__toursection {
+		text-align: center;
+		padding-left: 40px;
+		.pagetitle__header {
+			margin-left: 40px;
+		}
+		&_jointournament {
+			margin-left: -50px;
+			display: inline-block;
+			width: 600px;
+			height: 550px;
+			position: relative;
+			button {
+				position: absolute;
+				z-index: 999;
+				bottom: 50px;
+				left: 120px;
+				right: 0;
+				text-align: center;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				padding: 2px;
+				background: linear-gradient(
+						22.68deg,
+						rgba(255, 255, 255, 0) 83.34%,
+						rgba(48, 46, 147, 0.6) 101.13%
+					),
+					linear-gradient(
+						149.35deg,
+						rgba(48, 46, 147, 0.6) 6.05%,
+						rgba(0, 0, 0, 0) 15.44%
+					);
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out;
+				mask-composite: exclude;
+				transform: skewX(-10deg);
+				border-radius: 20px;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				background: radial-gradient(
+					53.41% 36.45% at 61.98% 67.56%,
+					rgba(52, 49, 152, 0.5) 0.52%,
+					rgba(0, 0, 0, 0.5) 100%
+				);
+				box-shadow: inset -10px 14px 51px #1e2058,
+					inset 0px -6px 24px rgba(149, 147, 255, 0.3);
+				border-radius: 20px;
+				transform: skewX(-10deg);
+			}
+		}
+	}
+
+	&__raidsection {
+		&_raiditem {
+			margin-bottom: 2.5rem;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+			position: relative;
+			z-index: 999;
+			display: flex;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				padding: 2px;
+				background: linear-gradient(
+						22.68deg,
+						rgba(255, 255, 255, 0) 83.34%,
+						rgba(48, 46, 147, 0.6) 101.13%
+					),
+					linear-gradient(
+						149.35deg,
+						rgba(48, 46, 147, 0.6) 6.05%,
+						rgba(0, 0, 0, 0) 15.44%
+					);
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out;
+				mask-composite: exclude;
+				transform: skewX(-15deg);
+				border-radius: 20px;
+			}
+			&::before {
+				z-index: -1;
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				background: radial-gradient(
+					53.41% 36.45% at 61.98% 67.56%,
+					rgba(52, 49, 152, 0.5) 0.52%,
+					rgba(0, 0, 0, 0.5) 100%
+				);
+				box-shadow: inset -10px 14px 51px #1e2058,
+					inset 0px -6px 24px rgba(149, 147, 255, 0.3);
+				border-radius: 20px;
+				transform: skewX(-15deg);
+			}
+			.profile_image {
+				width: 240px;
+				margin-left: -4rem;
+			}
+			.clock_credits {
+				margin-top: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				h5 {
+					margin-bottom: 0px;
+					font-size: 14.5px;
+					line-height: 140.8%;
+					font-family: "Jost-600";
+					text-align: right;
+					letter-spacing: 0.01em;
+					text-transform: uppercase;
+					color: #ffffff;
+				}
+				.creditsbox {
+					display: flex;
+					align-items: center;
+					p {
+						margin-left: 10px;
+						margin-bottom: 0px;
+						font-size: 36.2014px;
+						line-height: 140.8%;
+						font-family: "Neuropol";
+
+						letter-spacing: 0.01em;
+						text-transform: uppercase;
+
+						color: #ffffff;
+
+						text-shadow: 0px 3.36757px 11.7865px #8f68ff;
+					}
+				}
+			}
+			.profile_box {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				margin-top: 1.5rem;
+				& > div:nth-child(1) {
+					width: 70%;
+				}
+				& > div:nth-child(2) {
+					margin-right: 20px;
+				}
+				h4 {
+					font-size: 25px;
+					line-height: 140.8%;
+					font-family: "Jost-600";
+					letter-spacing: 0.01em;
+					text-transform: uppercase;
+					color: #ffffff;
+					text-shadow: 0px 4px 14px #8f68ff;
+				}
+			}
+			.valueBox {
+				display: flex;
+				align-items: center;
+				p {
+					margin-bottom: 0px;
+					margin-left: 10px;
+					font-size: 17px;
+					line-height: 190.8%;
+					font-family: "Jost-500";
+					letter-spacing: 0.01em;
+					text-transform: capitalize;
+					color: #ffffff;
+				}
+			}
+			.valueContainer {
+				display: flex;
+				justify-content: space-between;
+				align-content: center;
+			}
+		}
+	}
+	&__clockBlock {
+		position: relative;
+		z-index: 1;
+		padding-right: 20px;
+		padding-left: 5px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			padding: 3px;
+			background: linear-gradient(48deg, rgba(0, 0, 0, 0) 66%, #5627db 91.85%),
+				linear-gradient(145.02deg, #1447c9 5.29%, rgba(0, 0, 0, 0) 38.1%);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-10deg);
+		}
+		&::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: linear-gradient(180deg, #000000 52.58%, #1a1949 100%);
+			box-shadow: 0px 4px 14px #8f68ff;
+			transform: skewX(-10deg);
+		}
+
+		span {
+			font-family: "digital";
+			font-size: 59.98px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 6.39614px 22.3865px #8f68ff;
+		}
+	}
+}

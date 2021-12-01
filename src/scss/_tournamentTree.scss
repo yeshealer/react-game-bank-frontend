@@ -1,0 +1,252 @@
+.tournamentTree {
+	//------- {{ Variables }} -------//
+	display: flex;
+	justify-content: center;
+	margin-left: 300px;
+	padding-bottom: 5rem;
+
+	$white: #9593ff;
+	$bg: #2e6ba7;
+
+	$horizontal-gutter: 180px;
+	$border-radius: 0px;
+
+	$entry-min-height: 140px;
+
+	$label-width: 250px;
+	$label-height: 40px;
+	$label-border-radius: 5px;
+
+	//------- {{ Styles }} -------//
+
+	*,
+	*:before,
+	*:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	#wrapper {
+		position: relative;
+		transform: skew(-10deg);
+	}
+
+	.branch {
+		position: relative;
+		margin-right: $horizontal-gutter + $label-width;
+		&:before {
+			content: "";
+			width: $horizontal-gutter / 2;
+			border-top: 2px solid $white;
+			position: absolute;
+			right: -$horizontal-gutter;
+			top: 50%;
+			margin-top: 1px;
+			z-index: -1;
+		}
+	}
+
+	.entry {
+		&__schedule {
+			position: absolute;
+			right: -70px;
+			margin-top: -10px;
+			transform: skew(10deg);
+			text-align: center;
+			p {
+				white-space: nowrap;
+				margin-bottom: 0px;
+				font-size: 13px;
+				line-height: 140.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 2.85714px 10px #8f68ff;
+			}
+		}
+		&__semifinal {
+			position: absolute;
+			right: -50px;
+			margin-top: -30px;
+			transform: skew(10deg);
+			text-align: center;
+			h5 {
+				font-size: 18.2px;
+				line-height: 140.8%;
+				font-family: "Jost-700";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 1.48936px 5.21277px #8f68ff;
+				margin-bottom: 0px;
+			}
+			p {
+				margin-bottom: 0px;
+				font-size: 13px;
+				line-height: 140.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 2.85714px 10px #8f68ff;
+			}
+		}
+		&__final {
+			position: absolute;
+			right: -50px;
+			margin-top: -30px;
+			transform: skew(10deg);
+			text-align: center;
+			h4 {
+				font-size: 33px;
+				line-height: 140.8%;
+				font-family: "Jost-700";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 2.85714px 10px #8f68ff;
+				margin-bottom: 0px;
+			}
+			p {
+				margin-bottom: 0px;
+				font-size: 17.2308px;
+				line-height: 140.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 3.07692px 10.7692px #8f68ff;
+			}
+		}
+		position: relative;
+		min-height: $entry-min-height;
+
+		&:before {
+			content: "";
+			height: 100%;
+			border-right: 2px solid $white;
+			position: absolute;
+			right: -($horizontal-gutter / 2);
+		}
+		&:after {
+			content: "";
+			width: $horizontal-gutter / 2;
+			border-top: 2px solid $white;
+			position: absolute;
+			right: -($horizontal-gutter / 2);
+			top: 50%;
+			margin-top: 1px;
+		}
+		&:first-child {
+			&:before {
+				width: $border-radius;
+				height: 50%;
+				top: 50%;
+				margin-top: 2px;
+				border-radius: 0 $border-radius 0 0;
+			}
+			&:after {
+				height: $border-radius;
+				border-radius: 0 $border-radius 0 0;
+			}
+		}
+		&:last-child {
+			&:before {
+				width: $border-radius;
+				height: 50%;
+				border-radius: 0 0 $border-radius 0;
+			}
+			&:after {
+				height: $border-radius;
+				border-top: none;
+				border-bottom: 2px solid $white;
+				border-radius: 0 0 $border-radius 0;
+				margin-top: -$border-radius + 1px;
+			}
+		}
+		&.sole {
+			&:before {
+				display: none;
+			}
+			&:after {
+				width: $horizontal-gutter / 2;
+				height: 0;
+				margin-top: 1px;
+				border-radius: 0;
+			}
+		}
+	}
+	.second {
+	}
+
+	.label {
+		position: relative;
+		&__profilePic {
+			z-index: 9999;
+			position: absolute;
+			left: -20px;
+			top: -15px;
+			width: 60px;
+		}
+
+		&__point {
+			position: absolute;
+			right: 10px;
+			top: 18px;
+		}
+
+		z-index: 0;
+		display: block;
+		min-width: $label-width;
+		padding: 10px 10px;
+		line-height: $label-height - 5px * 2;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -($label-height / 2);
+		color: white;
+		transform: skew(10deg);
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			padding: 2px;
+
+			background: linear-gradient(
+					80.65deg,
+					rgba(255, 255, 255, 0) 75.95%,
+					rgba(48, 46, 147, 0.4) 96.98%
+				),
+				linear-gradient(143.04deg, #302e93 11.89%, rgba(0, 0, 0, 0) 30.36%);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skew(-25deg);
+		}
+		&::before {
+			transform: skew(-25deg);
+			z-index: -1;
+			content: "";
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			background: radial-gradient(
+				90.99% 78.85% at 105.58% 146.15%,
+				rgba(38, 35, 131, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: inset -10px 14px 51px rgba(51, 54, 141, 0.6),
+				inset 0px -6px 24px rgba(149, 147, 255, 0.37);
+		}
+	}
+}

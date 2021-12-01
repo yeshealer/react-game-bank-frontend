@@ -1,0 +1,98 @@
+.main {
+	display: grid;
+	align-items: stretch;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-auto-rows: minmax(min-content, 1fr);
+	margin-top: 2rem !important;
+	margin-left: 4rem !important;
+	margin-right: 4rem !important;
+	&__div {
+		background-size: 100%;
+		min-height: 300px;
+		background-position: 50% 0%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		webkit-transition: background-size 300ms linear;
+		-moz-transition: background-size 300 linear;
+		-o-transition: background-size 300 linear;
+		-ms-transition: background-size 300ms linear;
+		transition: background-size 300ms linear;
+		&:hover {
+			background-size: 110%;
+		}
+		&_1 {
+			background-image: url("../assets/images/missions.png");
+			grid-column: span 2;
+			background-position: 50% 65%;
+		}
+		&_2 {
+			background-image: url("../assets/images/battle.png");
+			background-position: 50% 50%;
+			grid-column: span 2;
+		}
+		&_3 {
+			background-image: url("../assets/images/armory.png");
+			// grid-column: span 2;
+		}
+		&_4 {
+			background-image: url("../assets/images/real-estate.png");
+			// grid-column: span 2;
+		}
+		&_5 {
+			background-image: url("../assets/images/liquidation-room.png");
+			background-position: 50% 60%;
+			// grid-column: span 2;
+		}
+		&_6 {
+			background-image: url("../assets/images/techlab.png");
+			background-position: 50% 60%;
+			// grid-column: span 2;
+		}
+		&_7 {
+			background-image: url("../assets/images/bank.png");
+			background-position: 50% 70%;
+			grid-column: span 1;
+		}
+		&_8 {
+			background-image: url("../assets/images/allies-eneimes.png");
+			background-position: 50% 40%;
+			grid-column: span 2;
+		}
+		&_9 {
+			background-image: url("../assets/images/rankings.png");
+			grid-column: span 1;
+		}
+		&_10 {
+			background-image: url("../assets/images/tournaments-raids.png");
+			background-position: 50% 30%;
+			grid-column: span 1;
+		}
+		&_11 {
+			background-image: url("../assets/images/clans.png");
+			background-position: 50% 30%;
+			grid-column: span 1;
+		}
+		&_12 {
+			background-image: url("../assets/images/profile.png");
+			background-position: 0% 15%;
+			grid-column: span 2;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-family: "Jost-600";
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: rgba(25, 27, 58, 0.91);
+		color: #ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 20px;
+	}
+}

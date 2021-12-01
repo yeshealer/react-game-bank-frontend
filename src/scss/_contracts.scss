@@ -1,0 +1,125 @@
+.contracts {
+	&__content {
+		display: flex;
+		padding-top: 30px;
+		align-items: flex-start;
+	}
+	&__profilePic {
+		margin-left: -80px;
+	}
+	&__info {
+		margin-left: 50px;
+	}
+	&__rank {
+		margin-left: -30px;
+		margin-top: 30px;
+		display: inline-flex;
+		padding: 11px 43px;
+		h5 {
+			margin-bottom: 0px;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			font-size: 19px;
+			line-height: 140.8%;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4px 14px #8f68ff;
+		}
+		p {
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 0px;
+			font-size: 20px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #8f68ff;
+			text-shadow: 0px 5.65414px 19.7895px #8f68ff;
+		}
+	}
+	&__value {
+		margin-top: 30px;
+		margin-bottom: 50px;
+		margin-left: -15px;
+		text-align: left;
+		padding-right: 100px;
+		padding-top: 25px;
+		padding-bottom: 0px;
+		background-image: url("../assets/images/rt1.svg");
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		&:last-child {
+			background-image: none;
+		}
+		h1 {
+			font-size: 20.04px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4.85106px 16.9787px #8f68ff;
+		}
+		p {
+			font-size: 13px;
+			line-height: 140.8%;
+			font-family: "Jost-600";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #4a5164;
+		}
+	}
+	&__controller {
+		margin-left: 80px;
+		margin-right: 30px;
+		text-align: right;
+	}
+	&__clockBlock {
+		display: block;
+		padding-right: 20px;
+		padding-left: 5px;
+		padding-top: 10px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			padding: 3px;
+			background: linear-gradient(48deg, rgba(0, 0, 0, 0) 66%, #5627db 91.85%),
+				linear-gradient(145.02deg, #1447c9 5.29%, rgba(0, 0, 0, 0) 38.1%);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-10deg);
+		}
+		&::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: linear-gradient(180deg, #000000 52.58%, #1a1949 100%);
+			// box-shadow: 0px 4px 14px #8f68ff;
+			transform: skewX(-10deg);
+		}
+
+		span {
+			font-family: "digital";
+			font-size: 59.98px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 6.39614px 22.3865px #8f68ff;
+		}
+	}
+}

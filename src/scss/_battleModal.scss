@@ -1,0 +1,259 @@
+.battleModal {
+	&__battleBtn {
+		padding: 18px 45px !important;
+		font-size: 17.0611px !important;
+		line-height: 140.8% !important;
+		font-family: "Jost-600" !important;
+		letter-spacing: 0.01em !important;
+		text-transform: uppercase !important;
+		color: #ffffff !important;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 2px;
+			border-radius: 11.374px;
+			background: linear-gradient(
+					94deg,
+					rgba(100, 57, 224, 0) 48.91%,
+					#7a4ff4 86.23%
+				),
+				linear-gradient(141.71deg, #4378ff 5.03%, rgba(67, 120, 255, 0) 36.19%);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-20deg);
+		}
+		&::before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: linear-gradient(90deg, #2231af 2.84%, #500798 67.79%);
+			box-shadow: inset 0px -1.1374px 2.27481px rgba(255, 255, 255, 0.42),
+				inset -8.37px 12.92px 24.51px #522ac5,
+				inset 8.37px 12.92px 24.51px #00195a,
+				inset 0px -6.82443px 27.2977px rgba(255, 255, 255, 0.2);
+			border-radius: 11.374px;
+			transform: skewX(-20deg);
+		}
+		img {
+			margin-right: 10px;
+			margin-top: -4px;
+		}
+	}
+	&__content {
+		.modal-content {
+			background-color: transparent !important;
+		}
+	}
+	&__body {
+		margin-top: 80px;
+		position: relative;
+	}
+	&__closeBtn {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+	&__title {
+		text-align: center;
+		font-size: 59.1902px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #8f68ff;
+		text-shadow: 0px 5.03746px 17.6311px #4f35ed;
+		background: -webkit-linear-gradient(0deg, #8f68ff, #8f68ff),
+			-webkit-linear-gradient(90deg, #1b0796 0%, #4f0798 76.4%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__subTitle {
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		font-size: 40.56px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		letter-spacing: 0.01em;
+		text-shadow: 0px 3.28165px 11.4858px #8f68ff;
+	}
+	&__statement {
+		font-family: "Jost-600";
+		font-weight: 600;
+		font-size: 16.6533px;
+		line-height: 141.8%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: white;
+	}
+	&__wrapper {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__wrapperLine {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	&__wrapperDotLine {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	&__commonLine {
+		margin-top: 3px;
+		height: 2.07389px !important;
+		opacity: 1 !important;
+		background: linear-gradient(to right, #81a8fd, #0157ff) !important;
+	}
+	&__line {
+		margin-right: 5px;
+		width: 86px;
+	}
+	&__line1 {
+		margin-right: 5px;
+		width: 145px;
+	}
+	&__dot {
+		margin-right: 0px;
+		width: 3px;
+	}
+	&__moredetail {
+		font-size: 16.06px;
+	}
+	&__btnMore {
+		background: transparent;
+		border: none;
+		padding: unset;
+	}
+	&__msDownList {
+		margin-right: 12px;
+	}
+	&__vsWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__cardContainer {
+		display: flex;
+		flex-direction: row;
+		width: 500px;
+		height: 240px;
+		&::before {
+			background: none !important;
+		}
+	}
+	&__leftCard {
+		justify-content: flex-start;
+	}
+	&__rightCard {
+		justify-content: flex-end;
+	}
+	&__vswrapper {
+		position: relative;
+	}
+	&__vsline {
+		position: absolute;
+		top: 5px;
+		left: -20px;
+		height: 3px !important;
+		opacity: 1 !important;
+		background: white;
+		width: 100px;
+		filter: blur(10px);
+		transform: rotate(113.65deg);
+	}
+	&__vstext {
+		font-family: "Neuropol";
+		font-size: 33px;
+		line-height: 140.8%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-shadow: 0px 10px 14px #8f68ff;
+		margin-right: 50px;
+	}
+	&__picProfile {
+		position: relative;
+		right: -60px;
+	}
+	&__damage {
+		color: #d80000;
+		margin-left: 16px;
+		margin-top: 16px;
+		font-family: "Jost-600";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 140.8%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+	}
+	&__progress {
+		margin-left: 16px;
+		margin-top: 16px;
+		width: 48%;
+		height: 2px;
+		background: -webkit-linear-gradient(left, #2b2b2c 58%, #ffedf6 100%);
+	}
+	&__progressbar {
+		width: 58%;
+		background: -webkit-linear-gradient(left, #244240 0%, #00eee0 100%);
+		float: left;
+		height: 4px;
+		margin-top: -2px;
+	}
+	&__progWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	&__rightProg {
+		background: -webkit-linear-gradient(right, #2b2b2c 50%, #ffedf6 100%);
+	}
+	&__rightProgbar {
+		float: right;
+		width: 50%;
+		background: -webkit-linear-gradient(right, #244240 0%, #00eee0 100%);
+	}
+	&__progHeader {
+		font-family: "Neuropol";
+		font-size: 17px;
+		line-height: 140.8%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-shadow: 0px 4px 14px #8f68ff;
+		margin-bottom: 0;
+		margin-left: 16px;
+	}
+}
+.modal-lg,
+.modal-xl {
+	max-width: 1200px !important;
+}
+body.modal-open > :not(.modal) {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	margin: -10px;
+}

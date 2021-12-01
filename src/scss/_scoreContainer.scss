@@ -1,0 +1,31 @@
+.scoreContainer {
+	display: flex;
+	justify-content: space-between;
+	height: 147px;
+	background: radial-gradient(
+		43.47% 78.85% at 50.44% 146.15%,
+		rgba(38, 35, 131, 0.5) 0.52%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
+	box-shadow: inset -10px 14px 51px -12px #1e2058,
+		inset 0px -6px 24px -7px rgba(149, 147, 255, 0.3);
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 100% 100%;
+	border-radius: 20px;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding-left: 2rem;
+	@include respond-to(xl) {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	@include respond-to(lg) {
+		border-radius: 0;
+		margin-left: 0rem;
+		width: 100%;
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+}

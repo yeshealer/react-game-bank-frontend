@@ -1,0 +1,283 @@
+.warusertable {
+	z-index: 999;
+	margin-top: 10rem;
+	margin-left: 5rem !important;
+	position: relative;
+	color: white;
+	display: flex;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+		padding: 2px;
+		border-radius: 20px;
+
+		background: linear-gradient(
+				127.99deg,
+				rgba(48, 46, 147, 0.6) 3.23%,
+				rgba(0, 0, 0, 0) 8.26%
+			),
+			linear-gradient(
+				42.09deg,
+				rgba(255, 255, 255, 0) 59.85%,
+				rgba(48, 46, 147, 0.6) 70%
+			);
+		-webkit-mask: linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: destination-out;
+		mask-composite: exclude;
+		transform: skewX(-10deg);
+	}
+	&::before {
+		z-index: 0;
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background: radial-gradient(
+			24.76% 36.01% at 56.33% 41.57%,
+			rgba(20, 18, 74, 0.5) 0.52%,
+			rgba(0, 0, 0, 0.5) 100%
+		);
+		box-shadow: inset -10px 14px 51px #1e2058,
+			inset 0px -6px 24px rgba(149, 147, 255, 0.3);
+		border-radius: 20px;
+		transform: skewX(-10deg);
+	}
+	&__listBlock {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		transform: skewX(-10deg);
+		&__header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 57px;
+			position: relative;
+			transform: skewX(10deg);
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 0;
+				padding: 2px;
+				background: linear-gradient(
+						128.73deg,
+						rgba(48, 46, 147, 0.6) -5.86%,
+						rgba(0, 0, 0, 0) 7.29%
+					),
+					linear-gradient(
+						41.33deg,
+						rgba(255, 255, 255, 0) 60.21%,
+						rgba(48, 46, 147, 0.5) 86.7%
+					);
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out;
+				mask-composite: exclude;
+				transform: skewX(-10deg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				background: radial-gradient(
+					50.09% 71.93% at 32.32% 133.33%,
+					rgba(38, 35, 131, 0.5) 0.52%,
+					rgba(0, 0, 0, 0.5) 100%
+				);
+				box-shadow: inset -10px 14px 51px rgba(51, 54, 141, 0.6),
+					inset 0px -6px 24px rgba(149, 147, 255, 0.37);
+				transform: skewX(-10deg);
+				z-index: -1;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+			}
+			p {
+				margin-left: 1rem;
+				font-size: 16px;
+				line-height: 140.8%;
+				font-family: "Jost-500";
+				margin-bottom: 0px;
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+		}
+	}
+	&__infoBlock {
+		width: 100%;
+		display: flex;
+		position: relative;
+		background: linear-gradient(
+			191.24deg,
+			rgba(37, 35, 131, 0) -40.32%,
+			rgba(93, 89, 214, 0.33) 97.93%
+		);
+
+		padding: 15px 20px;
+		&-profilepic {
+			box-shadow: 0px 5.77445px 6.73686px rgba(80, 7, 152, 0.02),
+				0px 6.73686px 16.3609px #341697;
+			transform: scaleX(60deg);
+		}
+		&-win {
+			transform: skewX(10deg);
+			display: flex;
+			align-items: center;
+			p {
+				margin-bottom: 0px;
+				font-size: 14.57px;
+				line-height: 140.8%;
+				font-family: "Jost-600";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #01c780;
+			}
+		}
+		&-damage {
+			transform: skewX(10deg);
+			display: flex;
+			align-items: center;
+
+			h6 {
+				margin-bottom: 0px;
+				font-weight: 500;
+				font-size: 15.3696px;
+				line-height: 190.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+				color: #ffffff;
+			}
+			p {
+				margin-left: 5px;
+				margin-bottom: 0px;
+				font-weight: 500;
+				font-size: 15.3696px;
+				line-height: 190.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+				color: #01c780;
+			}
+		}
+		&-infoBox {
+			transform: skewX(5deg);
+			display: flex;
+			align-items: center;
+			p {
+				margin-left: 10px;
+				margin-bottom: 0px;
+				font-size: 15px;
+				line-height: 190.8%;
+				font-family: "Jost-500";
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+				color: #ffffff;
+			}
+			h6 {
+				margin-left: 10px;
+				margin-bottom: 0px;
+				font-size: 14.17px;
+				line-height: 140.8%;
+				font-family: "Neuropol";
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 1.96889px 6.89113px #8f68ff;
+			}
+		}
+	}
+	&__list {
+		padding-top: 10px;
+		position: relative;
+		overflow: auto;
+		height: 680px;
+		background: linear-gradient(
+			178.26deg,
+			rgba(20, 18, 74, 0) 58.6%,
+			rgba(23, 21, 64, 0.7) 98.18%
+		);
+		border-radius: 20px;
+		&::after {
+			z-index: 99999;
+			content: "";
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			// transform: rotate(60deg);
+		}
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 25px;
+			background: radial-gradient(
+				76.77% 69.38% at 88.6% 44.86%,
+				rgba(36, 35, 84, 0.45) 50%,
+				rgba(38, 35, 131, 0) 100%
+			);
+		}
+		&-itemstatus {
+			transform: skewX(10deg);
+			display: flex;
+			align-items: center;
+			h6 {
+				font-size: 14px;
+				line-height: 140.8%;
+				font-family: "Jost-600";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				margin-bottom: 0px;
+			}
+			p {
+				font-size: 14px;
+				line-height: 140.8%;
+				font-family: "Jost-600";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				margin-bottom: 0px;
+			}
+		}
+		p {
+			transform: skewX(10deg);
+			font-size: 15.3696px;
+			line-height: 190.8%;
+			font-family: "Jost-500";
+			margin-bottom: 0px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+
+			color: #ffffff;
+		}
+		.died {
+			color: #c00e0c;
+		}
+		.attacked {
+			color: #f3a100;
+		}
+		.lost {
+			color: #ee6328;
+		}
+		.won {
+			color: #01c780;
+		}
+	}
+}

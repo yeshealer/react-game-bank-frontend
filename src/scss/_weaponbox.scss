@@ -1,0 +1,153 @@
+.weaponbox {
+	display: inline-block;
+	width: 700px;
+	margin-top: 3rem;
+	.tiltBox {
+		&::before {
+			transform: skewX(-10deg);
+		}
+		&::after {
+			transform: skewX(-10deg);
+		}
+	}
+	&__pic {
+		position: relative;
+		display: inline-block;
+		margin-left: -30px;
+		padding: 1rem 1.3rem;
+		&-magnifier {
+			position: absolute;
+			top: 10px;
+			right: -10px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 20px;
+			z-index: -1;
+			padding: 2px;
+
+			background: linear-gradient(
+					50.88deg,
+					rgba(255, 255, 255, 0) 62.48%,
+					rgba(48, 46, 147, 0.6) 86.96%
+				),
+				linear-gradient(
+					41.44deg,
+					rgba(123, 21, 171, 0.6) 9.56%,
+					rgba(255, 255, 255, 0) 28.78%
+				);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-15deg);
+		}
+		&::before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: radial-gradient(
+				39.27% 78.85% at 45.57% 146.15%,
+				rgba(202, 41, 242, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: 0px 8.93753px 15.6407px #000000,
+				inset -16.1372px 22.5921px 82.2998px #1e2058,
+				inset 0px -9.68232px 38.7293px rgba(149, 147, 255, 0.3);
+			backdrop-filter: blur(33.5158px);
+			border-radius: 15.6407px;
+			transform: skewX(-15deg);
+		}
+	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h1 {
+			font-family: "Jost-600";
+			font-size: 25px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4px 14px #8f68ff;
+			margin-bottom: 0px;
+		}
+		p {
+			margin-left: 10px;
+			font-size: 24.0429px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 2.23655px 7.82791px #8f68ff;
+			margin-bottom: 0px;
+		}
+		img {
+			width: 20px;
+		}
+	}
+	&__description {
+		margin-top: 20px;
+		text-align: left;
+		font-size: 16px;
+		line-height: 162.8%;
+		font-family: "Jost-500";
+		letter-spacing: 0.01em;
+		color: #ffffff;
+	}
+	.no-bg {
+		background: none;
+	}
+	&__value {
+		margin-left: -15px;
+		text-align: left;
+		padding-right: 100px;
+		padding-top: 25px;
+		padding-bottom: 0px;
+		background-image: url("../assets/images/rt1.svg");
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		h1 {
+			font-size: 20.04px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4.85106px 16.9787px #8f68ff;
+		}
+		p {
+			font-size: 13px;
+			line-height: 140.8%;
+			font-family: "Jost-600";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #4a5164;
+		}
+	}
+	&__counterbox {
+		margin-left: -40px;
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+		.pointCounter {
+			margin-top: 0px;
+		}
+		.button {
+			margin-left: 30px;
+		}
+	}
+}

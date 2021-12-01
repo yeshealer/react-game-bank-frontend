@@ -1,0 +1,217 @@
+.levelbar {
+	margin-top: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	@include respond-to(md) {
+		justify-content: flex-start;
+	}
+	&__valuesContent {
+		display: flex;
+
+		background-position: 45% 0%, 0% 0%;
+		background-repeat: no-repeat;
+		width: 410px;
+		position: relative;
+
+		&::after {
+			z-index: 1;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			padding: 2px;
+
+			background: linear-gradient(
+					258.64deg,
+					#3736c8 18.76%,
+					rgba(0, 0, 0, 0) 55.47%
+				),
+				linear-gradient(75.2deg, #a34ff5 -0.21%, rgba(0, 0, 0, 0) 43.51%);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-25deg);
+		}
+
+		&::before {
+			z-index: 0;
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: linear-gradient(236.87deg, #0c2b96 4.54%, #500798 63.77%);
+			box-shadow: 0px 12.3124px 12.3124px rgba(101, 0, 230, 0.25);
+			transform: skewX(-25deg);
+		}
+
+		@include respond-to(md) {
+			background-position: 100% 100%;
+			width: 300px;
+		}
+		&--tablet {
+			display: flex;
+			justify-content: flex-start;
+			margin-left: 1.5rem;
+			@include respond-to(sm) {
+				margin-left: 0rem;
+			}
+		}
+	}
+	&__values {
+		z-index: 1;
+		color: white;
+		font-size: 15px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 15px 56px;
+		@include respond-to(md) {
+			font-size: 13px;
+			padding: 15px 20px;
+		}
+	}
+	&__progress {
+		z-index: 1;
+		color: white;
+		font-size: 15px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		p {
+			font-family: "Jost-600";
+			font-size: 8.5px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			color: #ffffff;
+
+			text-shadow: 0px 4px 14px #8f68ff;
+		}
+		.progress {
+			width: 80px;
+			margin-left: 15px;
+			border-radius: 0px;
+			height: 5px;
+			background: linear-gradient(
+				to left,
+				rgba(255, 255, 255, 1),
+				rgba(255, 255, 255, 0)
+			);
+			align-items: flex-end;
+			overflow: inherit;
+			.bg-success {
+				background: linear-gradient(
+					to left,
+					rgba(0, 238, 224, 1),
+					rgba(0, 238, 224, 0)
+				);
+				border-radius: 0px;
+				height: 8px;
+			}
+		}
+		// display: flex;
+	}
+	&__notificationContent {
+		color: white;
+		position: relative;
+		z-index: 1;
+		&::after {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			padding: 2px;
+
+			background: linear-gradient(
+					50.56deg,
+					rgba(255, 255, 255, 0) 62.87%,
+					rgba(48, 46, 147, 0.5) 87.5%
+				),
+				linear-gradient(
+					120.12deg,
+					rgba(48, 46, 147, 0.6) 7.65%,
+					rgba(0, 0, 0, 0) 19.54%
+				);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-25deg);
+		}
+
+		&::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: radial-gradient(
+				39.72% 78.85% at 46.09% 146.15%,
+				rgba(38, 35, 131, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: inset -8.79454px 12.3124px 44.8522px rgba(51, 54, 141, 0.6),
+				inset 0px -5.27672px 21.1069px rgba(149, 147, 255, 0.37);
+			transform: skewX(-25deg);
+		}
+
+		display: flex;
+		align-items: center;
+		padding-left: 30px;
+		padding-right: 30px;
+		.ring {
+			position: relative;
+			&_badge {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				width: 10px;
+				height: 10px;
+				background-color: rgba(241, 36, 36, 1);
+				border-radius: 100%;
+				border: 2px solid black;
+			}
+			img {
+				margin-left: 20px;
+				margin-right: 0px;
+			}
+		}
+		p {
+			margin-bottom: 0px;
+			font-size: 12px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4px 14px #8f68ff;
+		}
+
+		img {
+			margin-left: 12px;
+			margin-right: 12px;
+		}
+	}
+}

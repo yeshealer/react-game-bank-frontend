@@ -1,0 +1,131 @@
+.outline {
+	margin-left: 8rem;
+	margin-right: 8rem;
+	margin-top: 4rem;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-name {
+			margin-left: 18rem;
+			font-size: 39.9758px;
+			line-height: 140.8%;
+			font-family: "Jost-600";
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 6.39614px 22.3865px #8f68ff;
+		}
+		&-levelBox {
+			display: flex;
+			align-items: center;
+			p {
+				font-size: 19.0219px;
+				line-height: 190.8%;
+				font-family: "Jost-500";
+				margin-bottom: 0px;
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+				margin-left: 15px;
+				color: #ffffff;
+			}
+		}
+		&-tiltBorder {
+			margin: 0px 20px;
+			margin-bottom: 10px;
+			width: 2px;
+			height: 50px;
+			border-radius: 10px;
+			background: linear-gradient(
+				150deg,
+				#aea9e8 6.91%,
+				rgba(0, 0, 0, 0) 127.53%
+			);
+			transform: rotate(-150deg);
+			opacity: 0.3;
+		}
+		&-progressBox {
+			display: flex;
+			align-items: center;
+			p {
+				margin-bottom: 0px;
+				margin-left: 20px;
+				font-size: 16px;
+				line-height: 140.8%;
+				font-family: "neuropol";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 4px 14px #8f68ff;
+			}
+		}
+	}
+	&__tiltContent {
+		display: flex;
+		align-items: flex-start;
+		padding-bottom: 36px;
+		&-pic {
+			margin-left: -4rem;
+			margin-top: -5.5rem;
+			width: 331px;
+		}
+		&-title {
+			margin-top: 28px;
+
+			padding: 13px 43px;
+			font-size: 19px;
+			line-height: 140.8%;
+			font-family: "Neuropol";
+
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 4px 14px #8f68ff;
+		}
+		&-item {
+			margin-left: -15px;
+			padding-right: 100px;
+			padding-top: 50px;
+			padding-bottom: 34px;
+			background-image: url("../assets/images/rt1.svg");
+			background-repeat: no-repeat;
+			background-position: 100% 100%;
+
+			h5 {
+				font-size: 22.04px;
+				line-height: 140.8%;
+				font-family: "Neuropol";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-shadow: 0px 4.85106px 16.9787px #8f68ff;
+			}
+			p {
+				font-size: 14px;
+				line-height: 140.8%;
+				font-family: "Jost-600";
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: #4a5164;
+				margin-bottom: 0px;
+			}
+		}
+		&-separater {
+			margin-top: -9px;
+			margin-left: 120px;
+			width: 2px;
+			height: 300px;
+			background: linear-gradient(
+				140deg,
+				rgba(0, 0, 0, 0) -19.68%,
+				#3e54a0 103.51%
+			);
+			opacity: 0.3;
+			transform: rotate(-160deg);
+		}
+
+		&-rightBox {
+			margin-left: 170px;
+		}
+	}
+}

@@ -1,0 +1,172 @@
+.missionblock {
+	text-align: center;
+	margin-top: 10rem;
+	padding-bottom: 5rem;
+	&__title {
+		margin-top: -60px;
+		text-align: left;
+		margin-left: 250px;
+		font-size: 38.98px;
+		line-height: 140.8%;
+		font-family: "Jost-600";
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-shadow: 0px 6.39614px 22.3865px #8f68ff;
+	}
+	&__tiltbox {
+		width: 1383px;
+		display: inline-block;
+		&::before {
+			transform: skewX(-7deg);
+			border-top-right-radius: 0px;
+		}
+		&::after {
+			transform: skewX(-7deg);
+			border-top-right-radius: 0px;
+		}
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__profilePic {
+		margin-left: -5rem;
+		margin-top: -4rem;
+		img {
+			width: 330px;
+		}
+	}
+	&__information {
+		text-align: left;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-left: 3rem;
+		&--icon {
+			width: 27px;
+		}
+		&--credits {
+			width: 20px;
+		}
+		p {
+			margin-left: 10px;
+			font-size: 20.6323px;
+			line-height: 190.8%;
+			font-family: "Jost-500";
+			margin-bottom: 0px;
+			letter-spacing: 0.01em;
+			text-transform: capitalize;
+			color: #ffffff;
+		}
+	}
+	&__parallegogram {
+		font-size: 17.3136px;
+		line-height: 140.8%;
+		font-family: "Neuropol";
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+		color: #ffffff;
+		padding: 10px 50px;
+		text-shadow: 0px 3.64497px 12.7574px #8f68ff;
+	}
+	&__description {
+		margin-top: 20px;
+		max-width: 680px;
+		font-size: 16px;
+		line-height: 162.8%;
+		font-family: "Jost-500";
+		letter-spacing: 0.01em;
+		color: #ffffff;
+	}
+	&__weapons {
+		margin-top: 20px;
+	}
+	&__controller {
+		width: 25%;
+		margin-top: 50px;
+		.CircularProgressbar {
+			width: 80%;
+			margin-top: 4rem;
+			&-trail {
+				stroke: rgba(95, 127, 176, 0.37) !important;
+				stroke-width: 2px;
+			}
+			&-path {
+				stroke: #00c57e !important;
+				stroke-linecap: butt !important;
+			}
+		}
+		&--text {
+			margin-top: 15%;
+			p {
+				font-size: 44.39px;
+				line-height: 190.8%;
+				font-family: "Neuropol";
+				margin-bottom: 0px;
+				text-transform: capitalize;
+				color: #ffffff;
+			}
+			h6 {
+				font-size: 20.9151px;
+				line-height: 190.8%;
+				font-family: "Jost-600";
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+				color: #ffffff;
+			}
+		}
+	}
+	&__clockBlock {
+		z-index: -1;
+		position: absolute;
+		right: -42px;
+		top: -90px;
+		display: inline-block;
+		padding-right: 20px;
+		padding-left: 5px;
+		padding-top: 10px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			padding: 3px;
+			background: linear-gradient(48deg, rgba(0, 0, 0, 0) 66%, #5627db 91.85%),
+				linear-gradient(145.02deg, #1447c9 5.29%, rgba(0, 0, 0, 0) 38.1%);
+
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-7deg);
+		}
+		&::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: linear-gradient(180deg, #000000 52.58%, #1a1949 100%);
+			// box-shadow: 0px 4px 14px #8f68ff;
+			transform: skewX(-7deg);
+		}
+
+		span {
+			font-family: "digital";
+			font-size: 59.98px;
+			line-height: 140.8%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #ffffff;
+			text-shadow: 0px 6.39614px 22.3865px #8f68ff;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+.pointCounter {
+	display: inline-flex;
+	margin-top: 50px;
+	&__center {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 160px;
+		margin-left: -10px;
+		margin-right: -10px;
+		p {
+			margin-bottom: 0px;
+			font-size: 25.06px;
+			line-height: 140.8%;
+			font-family: "Jost-600";
+
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+
+			color: #ffffff;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: -1;
+			background: radial-gradient(
+				100.46% 78.85% at 116.57% 146.15%,
+				rgba(38, 35, 131, 0.5) 0.52%,
+				rgba(0, 0, 0, 0.5) 100%
+			);
+			box-shadow: inset -10px 6px 24px rgba(51, 54, 141, 0.6),
+				inset 0px -4px 12px rgba(149, 147, 255, 0.37);
+
+			transform: skewX(-15deg);
+		}
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 86px;
+		height: 66px;
+		z-index: 0;
+		cursor: pointer;
+		&:hover {
+			img {
+				opacity: 0.8;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			padding: 2px;
+
+			background: linear-gradient(
+					52.99deg,
+					rgba(0, 0, 0, 0) 59.87%,
+					#5627db 83.32%
+				),
+				linear-gradient(140.11deg, #1447c9 4.9%, rgba(0, 0, 0, 0) 35.28%);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: destination-out;
+			mask-composite: exclude;
+			transform: skewX(-15deg);
+			border-radius: 11.374px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: -1;
+			background: radial-gradient(
+					36.39% 78.85% at 42.23% 146.15%,
+					rgba(255, 255, 255, 0.3) 0.52%,
+					rgba(0, 0, 0, 0.3) 100%
+				),
+				rgba(0, 0, 0, 0.8);
+			box-shadow: inset -10px 4px 31px #3b1f8b, inset 10px 4px 31px #00195a,
+				inset 0px -2.82px 14.3px rgba(255, 255, 255, 0.2);
+			border-radius: 11.374px;
+			transform: skew(-15deg);
+		}
+	}
+}

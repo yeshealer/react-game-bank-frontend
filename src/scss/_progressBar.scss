@@ -1,0 +1,43 @@
+.progressBar {
+	color: white;
+	font-size: 15px;
+	line-height: 140.8%;
+	font-family: "Neuropol";
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	.progress {
+		width: 120px;
+		margin-left: 15px;
+		border-radius: 0px;
+		height: 3px;
+		background: linear-gradient(
+			to left,
+			rgba(255, 255, 255, 1),
+			rgba(255, 255, 255, 0)
+		);
+		align-items: flex-end;
+		overflow: inherit;
+		.bg-success {
+			background: linear-gradient(
+				to left,
+				rgba(0, 238, 224, 1),
+				rgba(0, 238, 224, 0)
+			);
+			border-radius: 0px;
+			height: 5px;
+		}
+		.bg-primary {
+			background-color: transparent !important;
+			background: linear-gradient(
+				270deg,
+				#8f68ff 0%,
+				rgba(143, 104, 255, 0) 147.22%
+			);
+			border-radius: 0px;
+			height: 5px;
+		}
+	}
+}
